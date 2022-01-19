@@ -1,0 +1,21 @@
+
+#inputs#
+AB=int(input())
+BC=int(input())
+#end#
+
+#imports#
+from math import sqrt,acos,pi
+#end#
+
+#formulas#
+median=sqrt(BC**2+AB**2)*0.5
+theta_pi=acos(median/BC)
+theta=round(theta_pi*180/pi)
+#end#
+
+#application#
+AC=10
+BC=10
+print(f"{theta}\N{DEGREE SIGN}")
+#end#
